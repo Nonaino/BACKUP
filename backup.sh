@@ -8,6 +8,8 @@
 #
 #
 source ./backup.conf
+# crea directorio donde alojar archivos de log
+[ -d ~/.backup/log ] || mkdir -p ~/.backup/log
 echo "" >> $HOME/.backup/log/backup_$fecha.log
 echo "************************************" >> $HOME/.backup/log/backup_$fecha.log
 echo "*********** $hora ***************" >> $HOME/.backup/log/backup_$fecha.log
